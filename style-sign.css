@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    background-image: linear-gradient(to top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.hipervinculo {
+    text-decoration: none;
+    color: rgb(223, 219, 241);
+    border-radius: 5px;
+}
+
+button{
+    color: bisque;
+    background-color: #09f;
+}
