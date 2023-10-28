@@ -4,14 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesion</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <img src="imagenes/logo.png" alt="" height="50px">
     <h1 class="fondoh1">Sistema de Novedades</h1>
-    <form action="/iniarsesion" method="post">
+    <form action="/registrarusuario" method="post">
+        <div>
+            <input placeholder="Nombre" type="text" name="">
+        </div>
+        <div>
+            <input placeholder="Apellido" type="text" name="">
+        </div>
+        <div>
+            <input placeholder="Cedula" type="number" name="">
+        </div>
+        <div>
+            <input placeholder="Fecha Nacimiento" type="date" name="">
+        </div>
+
         <div>
             <svg fill="#000000" width="10px" height="10px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"
                 data-darkreader-inline-fill="" style="--darkreader-inline-fill: #000000;">
@@ -52,10 +65,9 @@
                 <input id="recuerdame" type="checkbox" name="" id="">
                 <label for="recuerdame">Recuerdame</label>
             </div>
-            <a href="https://google.com">¿Olvidaste tu contraseña?</a>
+            <a href="index.html">Iniciar sesion</a>
         </div>
-        <button>Ingresar</button>
-        <a class="button" href="registro.html">Ir a registro</a>
+        <button>Registrarse</button>
     </form>
 </body>
 

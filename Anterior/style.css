@@ -1,0 +1,22 @@
+/* control + k, control +c, crea comentario */
+
+/* control + espacio */
+.amarillo {
+    color: rgb(36, 143, 210);
+}
+
+.fondo-rojo {
+    background-color: brown;
+}
+
+.marron{
+    display: block;
+}
+
+#apunta-a-id{
+
+}
+
+.apunta-a-class{
+
+}
