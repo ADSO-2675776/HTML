@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Layout con Aside</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        aside {
+            width: 25%;
+            /* Define el ancho del aside según tus necesidades */
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        main {
+            /* flex-grow: 1; */
+            padding: 20px;
+            /*  hacer que el texto salte a l otra linea */
+            word-wrap: break-word;
+            /* aun no ha saltado por que es pegado */
+            word-break: break-all;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <div class="container">
+        <aside>
+            <h1>sdf</h1>
+            <h1>sdf</h1>
+        </aside>
+        <main>Main</main>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html>

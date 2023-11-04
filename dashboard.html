@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Maqueta</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            justify-content: space-between;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: white;
+            /* flex: 0 0 200px; */
+            width: 200px;
+            padding: 1rem;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 0.5rem 0;
+        }
+
+        .dashboard {
+            flex: 1;
+            padding: 1rem;
+            background-color: #f4f4f4;
+            overflow-y: scroll;
+            height: auto - 50px;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                /* width: 100%; */
+                display: none;
+                width: 100%;
+                padding: 0rem;
+            }
+
+            .menu {
+                display: flex;
+                background-color: #333;
+                color: white;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 100%; display:flex; flex-direction: column;">
+        <header class="header">
+            Encabezado
+            <div class="menu" onclick="let display = document.querySelector('.sidebar').style.display ;
+        document.querySelector('.sidebar').style.display = (display != 'flex') ? 'flex' : 'none'">
+                ...
+            </div>
+        </header>
+        <div class="container">
+            <aside class="sidebar">
+                Sidebar
+                <ul>
+                    <li>Opción 1</li>
+                    <li>Opción 2</li>
+                    <li>Opción 3</li>
+                </ul>
+            </aside>
+            <main class="dashboard">
+                Contenido del Dashboard
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+                <h1>hola</h1>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
